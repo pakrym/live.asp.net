@@ -16,6 +16,7 @@
     <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
     <DevelopmentServerPort>33451</DevelopmentServerPort>
     <SSLPort>44300</SSLPort>
+    <ApplicationInsightsResourceId>/subscriptions/6de210d0-cc8d-4f7e-ba0b-295f894b0638/resourcegroups/pakrym-resource-group/providers/microsoft.insights/components/pakrym-live-asp-net</ApplicationInsightsResourceId>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

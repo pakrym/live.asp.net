@@ -28,6 +28,7 @@ namespace live.asp.net.Controllers
         public async Task<IActionResult> Index(bool? disableCache)
         {
             _client.TrackDependency("HomeController.Index", "Index", DateTimeOffset.Now, TimeSpan.FromMilliseconds(100), true);
+            _client.TrackDependency("Other", "Whatever", "NONSQL", "Index", DateTimeOffset.Now, TimeSpan.FromMilliseconds(100), "0", true);
 
             var liveShowDetails = await _liveShowDetails.LoadAsync();
             var showList = await _showsService.GetRecordedShowsAsync(User, disableCache ?? false);
